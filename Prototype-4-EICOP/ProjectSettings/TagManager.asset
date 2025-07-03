@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - GoalArea
+  - MissZone
   layers:
   - Default
   - TransparentFX

@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
             {
                 feedbackText.text = "Goal!";
             }
+
+            // Move the ball to a random X before reset
+            GameObject ball = GameObject.Find("Ball");
+            float randomX = Random.Range(-6f, 6f);
+            ball.transform.position = new Vector2(randomX, -4);
         }
         else
         {
@@ -48,4 +53,5 @@ public class GameManager : MonoBehaviour
 
         scoreText.text = "Score: " + score;
     }
+
 }
